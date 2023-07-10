@@ -1,0 +1,58 @@
+os: linux
+arch: arm64-graviton2
+language: ruby
+rvm:
+- 2.6.6
+before_install:
+# decrypt private key
+
+# add permission 
+
+
+# kick off ssh-agent
+
+# remove
+
+install: gem install jekyll
+
+script:
+- bundle install
+- bundle exec jekyll build
+
+#deploy:
+#  provider: script
+#  skip_cleanup: true
+#  script: bash scripts/deploy.sh
+#  on:
+#    branch: dev
+after_success:
+# check the connection to host
+
+# add user account
+
+# copy _site to tmp
+
+# create new branch
+
+# clean 
+
+# copy _site 
+
+# git add & commit
+
+# push remote 
+
+# branch whitelist, 
+branches:
+  only:
+  - master     # monitor master branch
+  - dev        # monitor dev branch
+addons: 
+# caching bundler gem packages will speed up b
+cache: bundler
+# Optional: enable email notifications about the outcome of your builds
+notifications:
+  email: true
+env:
+  global:
+  - secure: 

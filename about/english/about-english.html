@@ -1,0 +1,66 @@
+---
+layout: extension
+title: About
+
+---
+
+{% include menu.html %}
+
+<div class ="post-container">
+  <li class="posts-labelgroup" id="posts-labelgroup">
+	<h1 id="posts-label">{{page.title}}</h1>
+  </li> 
+  
+  <div class = "image-container">
+  <img src="{{site.cdn_baseurl}}/assets/image/home-bg-e.jpg" />
+  </div>
+  
+    <div class = "about-page-meta">
+   <div class = "about-page-box">
+      <a href="{{site.baseurl}}/about/chinese/about-chinese.html">中文</a>
+   </div>
+   <div class = "about-page-box-link-none">
+      <a>English</a>
+   </div>
+  </div>
+  
+  <div class = "about-page"> 
+  Hello, <br/><br/><span>Rawposts</span> is a free Jekyll portfolio-style theme, which is designed to be a starting point for any Jekyll website.
+  By using this theme, the users can deploy a personal blog or website on Github Pages quickly.<br/>
+
+ <h2>Features: <br/></h2>
+  <ul>
+	<li>Fully responsive </li>
+	<li>Optimized for tablets & mobiles</li>
+	<li>Link to social media (Github/Facebook/Twitter/Linkin)</li>
+	<li>Article sharing to social media (Linkin/Fackbook/Twitter/Wechat...,180+)</li>
+	<li>Sidebar for auto TOC generator</li>
+	<li>Excerpt</li>
+	<li>Code highlighter (Rouge - 20+ themes)</li>
+	<li>Search keyword of website</li>
+	<li>Article reading statistics (Google Analytics/Busuanzi)</li>
+	<li>Statistics of site visits (Google Analytics/Busuanzi)</li>
+	<li>Pagination</li>
+	<li>Archive posts</li>
+	<li>Category posts</li>
+	<li>Comments (Gitalk)</li>
+	<li>RSS/Sitemap</li>
+	<li>SEO optimization</li>
+	<li>Auto build/deploy with Travis CI</li>
+	<li>Statistic for words count</li>
+	<li>jemoji for emoji</li>
+	<li>Latex formula support</li>
+	<li>dark mode selectable <br/></li>
+  </ul>
+  This theme is customizable (fonts, colors, layout elements, code coloration, etc...) and all the above features are defined in <span>_config.yml</span> file. The users can turn on/off these features only by setting the keywords in <span>_config.yml</span> easily.<br/><br/>
+  
+  For the <span>installation</span> & <span>usage guidance</span>, please refer to <a href = "/pinned/2019/02/23/Pinned-Template-english.html">[RawPosts - A theme for Jekyll]</a><br><br>
+  Welcome <a href = "https://github.com/gangdong/jekyll-theme-rawposts">fork </a> and use rawposts Jekyll theme.
+  </div>
+  {% include travis-box.html %}
+  <br><br>
+  {% include comments.html %}
+  {% include footer.html %}
+  <br>
+</div>
+  
